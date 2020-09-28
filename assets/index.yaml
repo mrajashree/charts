@@ -1,0 +1,40 @@
+apiVersion: v1
+entries:
+  rancher-backup:
+  - annotations:
+      catalog.cattle.io/auto-install: rancher-backup-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/namespace: cattle-resources-system
+      catalog.cattle.io/provides-gvr: resources.cattle.io.resourceset/v1
+      catalog.cattle.io/release-name: rancher-backup
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/ui-component: rancher-backup
+    apiVersion: v1
+    appVersion: v0.1.0-rc1
+    created: "2020-09-28T10:41:20.335962-07:00"
+    description: Provides ability to back up and restore the Rancher application running
+      on any Kubernetes cluster
+    digest: f1278d0291f87f2b4ed8ff4c49f2f544f12fcd95307c92dcf5b7edd216f06c31
+    keywords:
+    - applications
+    - infrastructure
+    name: rancher-backup
+    urls:
+    - assets/rancher-backup/rancher-backup-0.1.0.tgz
+    version: 0.1.0
+  rancher-backup-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-resources-system
+      catalog.cattle.io/release-name: rancher-backup-crd
+    apiVersion: v1
+    created: "2020-09-28T10:41:20.336476-07:00"
+    description: Installs the CRDs for rancher-backup.
+    digest: e9f81ce01a141924d5c6a1eb0ab1b71bfa4fc4e630b31267e04410c3b911602c
+    name: rancher-backup-crd
+    type: application
+    urls:
+    - assets/rancher-backup/rancher-backup-crd-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-09-28T10:41:20.334542-07:00"
